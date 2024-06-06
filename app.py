@@ -16,9 +16,9 @@ headers = {
 def obter_ideias_startup():
     # Solicita informações do usuário
     nome = input('Digite seu nome: ')
-    print(f"Olá, {nome}.\nVou te auxiliar para ter algumas ideias de startups.")
+    print(f"Olá, {nome}.\nMe informe como posso ser útil.")
     experiencia = input("Quais são suas experiências ou habilidades? ")
-    investimento = int(input("Qual seria o valor que você poderia investir? "))
+    investimento = int(input("Qual seria o valor que você pretende investir? "))
 
     # Monta a mensagem para enviar à API
     mensagem_usuario = f"""Meu nome é: {nome} e minhas experiências são: {experiencia}.
@@ -47,5 +47,3 @@ def obter_ideias_startup():
 
 # Chamada da função principal
 obter_ideias_startup()
-
-
